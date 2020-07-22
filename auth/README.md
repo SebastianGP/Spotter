@@ -1,2 +1,1 @@
-# Spotify Accounts Authentication Examples
-Spotter 🎯
+# Spotter 🎯
