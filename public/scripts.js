@@ -9,7 +9,7 @@ function script() {
 			// ** CREATE FUNCTION TO STORE THIS ID!!!!! **
 			.then(function (playlistID) {
 				fetchTracks()
-					.then(trackArr => addTracks(formStr(trackList(trackArr, 10), 10), playlistID));
+					.then(trackArr => addTracks(formStr(trackList(trackArr, 50), 50), playlistID));
 			})
 
 	});

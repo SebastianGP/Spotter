@@ -49,7 +49,7 @@ async function createPlaylist(id) {
 
 
 async function fetchTracks() {
-	let apiRes = await fetch('https://api.spotify.com/v1/me/top/tracks?time_range=medium_term&limit=10&offset=5', {
+	let apiRes = await fetch('https://api.spotify.com/v1/me/top/tracks?time_range=medium_term&limit=50&offset=5', {
 		headers: {
 			'Accept': 'application/json',
 			'Content-Type': 'application/json',
