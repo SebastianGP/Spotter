@@ -1,2 +1,2 @@
-# Spotify Accounts Authentication Examples
-Spotter 🎯
+# Spotter 🎯
+Powered by SpotifyAPI/VanillaJS/NodeJS/HTML
