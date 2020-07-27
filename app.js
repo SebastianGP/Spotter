@@ -130,6 +130,6 @@ app.get('/refresh_token', function (req, res) {
 
 console.log('Listening on 8888');
 
-var port_number = server.listen(process.env.PORT || 3000);
+var port_number = process.env.PORT;
 app.listen(port_number);
 
