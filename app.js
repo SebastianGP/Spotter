@@ -7,7 +7,7 @@ require('dotenv').config();
 
 var client_id = process.env.CLIENT_ID; // Your client id
 var client_secret = process.env.CLIENT_SECRET; // Your secret
-var redirect_uri = 'https://spotter-utilities.herokuapp.com/'; // Your redirect uri
+var redirect_uri = 'http://spotter-utilities.herokuapp.com/'; // Your redirect uri
 
 
 
@@ -128,8 +128,9 @@ app.get('/refresh_token', function (req, res) {
   });
 });
 
-console.log('Listening on 8888');
+
 
 var port_number = process.env.PORT;
 app.listen(port_number);
-
+app.disable('etag');
+console.log(`Listening on ${port_number}`);
