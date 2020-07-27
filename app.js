@@ -4,10 +4,11 @@ var cors = require('cors');
 var querystring = require('querystring');
 var cookieParser = require('cookie-parser');
 require('dotenv').config();
+var port_number = process.env.PORT || 3000;
 
 var client_id = process.env.CLIENT_ID; // Your client id
 var client_secret = process.env.CLIENT_SECRET; // Your secret
-var redirect_uri = 'http://spotter-utilities.herokuapp.com/callback'; // Your redirect uri
+var redirect_uri = `http://localhost:8888/callback`; // Your redirect uri
 
 
 
@@ -130,7 +131,7 @@ app.get('/refresh_token', function (req, res) {
 
 
 
-var port_number = process.env.PORT;
+
 app.listen(port_number);
 app.disable('etag');
 console.log(`Listening on ${port_number}`);
