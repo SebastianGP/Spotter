@@ -17,8 +17,7 @@ var redirect_uri = 'https://spotter-utilities.herokuapp.com/'; // Your redirect 
  * @return {string} The generated string
  */
 
-var port_number = server.listen(process.env.PORT || 3000);
-app.listen(port_number);
+
 
 
 
@@ -130,4 +129,7 @@ app.get('/refresh_token', function (req, res) {
 });
 
 console.log('Listening on 8888');
-app.listen(8888);
+
+var port_number = server.listen(process.env.PORT || 3000);
+app.listen(port_number);
+
